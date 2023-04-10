@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:padding="15sp"
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="137sp"
+            android:id="@+id/updateImage"
+            android:padding="5sp"
+            android:src="@drawable/img"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/car_image" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/carMakeView"
+                android:text="@string/car_make_view"
+                android:textColor="@color/black"
+                android:layout_margin="5sp"
+                android:padding="5sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/carModelView"
+                android:text="@string/car_model_view"
+                android:textColor="@color/black"
+                android:layout_margin="5sp"
+                android:padding="5sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addImage"
+                    android:text="@string/add_image"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="5sp"
+                    android:padding="5sp"
+                    android:backgroundTint="#699DDC"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deleteCar"
+                    android:text="@string/delete"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_margin="5sp"
+                    android:padding="5sp"
+                    android:backgroundTint="#EF069A"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

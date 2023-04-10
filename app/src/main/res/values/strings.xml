@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Garage App</string>
+    <string name="add_image">Add Car Image</string>
+    <string name="delete">Delete</string>
+    <string name="car_make_view">"Car Make "</string>
+    <string name="car_model_view">Car Model</string>
+    <string name="car_image">Car Image</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="logout">Log Out</string>
+    <string name="selectNewCar">Select New Car</string>
+    <string name="selectMake">Select Make</string>
+    <string name="selectModel">Select Model</string>
+    <string name="addCar">Add Car</string>
+    <string name="yourCars">Your Cars</string>
 </resources>
