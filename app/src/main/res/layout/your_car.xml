@@ -8,30 +8,30 @@
     >
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10sp"
-        android:layout_marginStart="15sp"
-        android:layout_marginEnd="15sp"
-        android:padding="15sp"
-        android:backgroundTint="@color/teal_200"
+        android:layout_marginTop="3sp"
+        android:layout_marginStart="3sp"
+        android:layout_marginEnd="3sp"
+        android:padding="3sp"
+        android:background="@color/recycle_background"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         >
 
         <ImageView
-            android:layout_width="150sp"
-            android:layout_height="137sp"
+            android:layout_width="115sp"
+            android:layout_height="110sp"
             android:id="@+id/updateImage"
-            android:padding="5sp"
+            android:padding="3sp"
             android:src="@drawable/img"
             android:scaleType="fitXY"
             android:contentDescription="@string/car_image" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
@@ -42,8 +42,8 @@
                 android:id="@+id/carMakeView"
                 android:text="@string/car_make_view"
                 android:textColor="@color/black"
-                android:layout_margin="5sp"
-                android:padding="5sp"
+                android:layout_margin="3sp"
+                android:padding="3sp"
                 />
 
             <TextView
@@ -52,8 +52,8 @@
                 android:id="@+id/carModelView"
                 android:text="@string/car_model_view"
                 android:textColor="@color/black"
-                android:layout_margin="5sp"
-                android:padding="5sp"
+                android:layout_margin="3sp"
+                android:padding="3sp"
                 />
 
             <LinearLayout
@@ -65,12 +65,13 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/addImage"
+                    android:id="@+id/addCarImage"
                     android:text="@string/add_image"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:layout_margin="5sp"
-                    android:padding="5sp"
+                    android:textSize="10sp"
+                    android:layout_margin="3sp"
+                    android:padding="3sp"
                     android:backgroundTint="#699DDC"
                     style="?android:attr/buttonBarButtonStyle" />
 
@@ -81,8 +82,9 @@
                     android:text="@string/delete"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:layout_margin="5sp"
-                    android:padding="5sp"
+                    android:textSize="10sp"
+                    android:layout_margin="3sp"
+                    android:padding="3sp"
                     android:backgroundTint="#EF069A"
                     style="?android:attr/buttonBarButtonStyle" />
 
