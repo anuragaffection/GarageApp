@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RegisterScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="17sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9sp"
+        android:layout_marginEnd="9sp"
+        android:layout_marginBottom="5sp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email"
+            android:textColorHint="#616161"
+            tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9sp"
+        android:layout_marginEnd="9sp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="#616161"
+            tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7sp"
+        android:text="@string/Register"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:id="@+id/loginNow"
+        android:text="@string/login_now"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

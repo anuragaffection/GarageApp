@@ -12,4 +12,10 @@
     <string name="selectModel">Select Model</string>
     <string name="addCar">Add Car</string>
     <string name="yourCars">Your Cars</string>
+    <string name="login">Login</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="password">Enter Password</string>
+    <string name="Register">Register</string>
+    <string name="login_now">Login Now</string>
+    <string name="Register_First">Register First</string>
 </resources>

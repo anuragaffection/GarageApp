@@ -1,8 +1,11 @@
 package com.example.garageapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,6 +15,8 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -20,14 +25,36 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView dashBoard;
+    Button logout;
+    FirebaseAuth auth;
+    FirebaseUser user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        dashBoard = findViewById(R.id.dashboard);
+        logout = findViewById(R.id.logout);
+        auth = FirebaseAuth.getInstance();
+        user = auth.getCurrentUser();
+
+        if (user == null){
+            Intent intent = new Intent(MainActivity.this, LoginScreen.class);
+            startActivity(intent);
+            finish();
+        } else {
+            dashBoard.setText(user.getEmail());
+        }
+
+        logout.setOnClickListener(v -> {
+            FirebaseAuth.getInstance().signOut();
+            Intent intent = new Intent(MainActivity.this, LoginScreen.class);
+            startActivity(intent);
+            finish();
+        });
+
         ArrayList<model> arrCars = new ArrayList<>();
-
-
         Spinner spinnerSelectMake = findViewById(R.id.selectMake);
         RecyclerView yourCarsList = findViewById(R.id.yourCarsList);
 

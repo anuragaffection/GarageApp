@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36225345217",
+    "project_id": "loginregister-b7730",
+    "storage_bucket": "loginregister-b7730.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36225345217:android:7a3e5a42fa110eb0e59640",
+        "android_client_info": {
+          "package_name": "com.example.garageapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36225345217-narr453ctgfqarhh0mf4uni36g3te5k8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBypNP17p4poXGmTEHaDoSdKjzJxVPOgmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36225345217-narr453ctgfqarhh0mf4uni36g3te5k8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
